@@ -49,7 +49,9 @@ class Ricty < Formula
   option "disable-visible-space", "Disable visible zenkaku space"
   option "patch-in-place", "Patch Powerline glyphs directly into Ricty fonts without creating new 'for Powerline' fonts"
 
-  depends_on 'fontforge' => 'with-python'
+  depends_on "automake"   => :build
+  depends_on "pkg-config" => :build
+  depends_on 'fontforge'  => 'with-python'
 
   def install
     share_fonts = share+'fonts'
