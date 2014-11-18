@@ -51,7 +51,7 @@ class Ricty < Formula
 
   depends_on "automake"   => :build
   depends_on "pkg-config" => :build
-  depends_on 'fontforge'  => 'with-python'
+  depends_on 'fontforge'
 
   def install
     share_fonts = share+'fonts'
